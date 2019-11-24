@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\groundScript.cs" />
     <Compile Include="Assets\RocketScript.cs" />
+    <Compile Include="Assets\topGroundScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Benahr21/Desktop/UNITY Projects/Assign3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
