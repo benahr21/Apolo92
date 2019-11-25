@@ -23,16 +23,16 @@ public class RocketScript : MonoBehaviour
 
     private void ProcessInput()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))  //Thrust - Go up with the rocket (Z AXIS)
         {
             rigidBody.AddRelativeForce(Vector3.up); 
            
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)) // Go left with the rocket - rotate
         {
             transform.Rotate(Vector3.forward); 
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D)) // Go right with the rocket - rotate  
         {
             transform.Rotate(-Vector3.forward);
         }
@@ -42,7 +42,7 @@ public class RocketScript : MonoBehaviour
     {
         if (exampleCol.collider.tag == "ground")
         {
-            //Replace 'Game Over' with your game over scene's name.
+            // When collide - restart
             SceneManager.LoadScene("SampleScene");
         }
         
